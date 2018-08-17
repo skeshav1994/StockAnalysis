@@ -1,7 +1,11 @@
 ### Predict stock market prices using RNN
 
 
-One thing I would like to emphasize that because my motivation is more on demonstrating how to build and train an RNN model in Tensorflow and less on solve the stock prediction problem, I didn't try too hard on improving the prediction outcomes. You are more than welcome to take this repo as a reference point and add more stock prediction related ideas to improve it. Enjoy.
+One thing I would like to emphasize that because my motivation is more on demonstrating how to build and train an RNN model in Tensorflow and less on solve the stock prediction problem, I didn't try too hard on improving the prediction outcomes.
+
+I take no responsibilty for money lost while trading with the predictions made here. Trade with caution but do YOLO on stocks, its important :) 
+
+You are more than welcome to take this repo as a reference point and add more stock prediction related ideas to improve it. Enjoy.
 
 1. Make sure `tensorflow` has been installed.
 2. First download the full S&P 500 data from [Yahoo! Finance ^GSPC](https://finance.yahoo.com/quote/%5EGSPC?p=^GSPC) (click the "Historical Data" tab and select the max time period). And save the .csv file to `data/SP500.csv`.
@@ -13,7 +17,7 @@ One thing I would like to emphasize that because my motivation is more on demons
 6. Run `python main.py` to train the model.
 
 
-7. I take no responsibilty for money lost while trading with the prediction here. Trade with caution but do YOLO on stocks, its important :) 
+
 
 For examples,
 - Train a model only on SemiCon.csv; no embedding
