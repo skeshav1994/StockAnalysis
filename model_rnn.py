@@ -10,7 +10,7 @@ import time
 import tensorflow as tf
 
 import matplotlib.pyplot as plt
-
+import num as numpy
 from tensorflow.contrib.tensorboard.plugins import projector
 
 
