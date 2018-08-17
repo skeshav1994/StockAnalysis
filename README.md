@@ -13,7 +13,14 @@ One thing I would like to emphasize that because my motivation is more on demons
 6. Run `python main.py` to train the model.
 
 
+7. I take no responsibilty for money lost while trading with the prediction here. Trade with caution but do YOLO on stocks, its important :) 
+
 For examples,
+- Train a model only on SemiCon.csv; no embedding
+```bash
+python main.py --stock_symbol=PSI --train --input_size=1 --lstm_size=128 --max_epoch=50
+```
+
 - Train a model only on SP500.csv; no embedding
 ```bash
 python main.py --stock_symbol=SP500 --train --input_size=1 --lstm_size=128 --max_epoch=50
@@ -24,14 +31,14 @@ python main.py --stock_symbol=SP500 --train --input_size=1 --lstm_size=128 --max
 python main.py --stock_count=100 --train --input_size=1 --lstm_size=128 --max_epoch=50 --embed_size=8
 ```
 
-- Start your Tensorboard
+- If you wish to  Start your Tensorboard 
 ```bash
 cd stock-rnn
 mkdir logs
 tensorboard --logdir ./logs --port 1234 --debug
 ```
 
-My python environment: 
+My environment: 
 Python version == 2.7
 ```
 BeautifulSoup==3.2.1
