@@ -3,6 +3,7 @@ import pandas as pd
 import pprint
 
 import tensorflow as tf
+
 import tensorflow.contrib.slim as slim
 
 from data_model import StockDataSet
